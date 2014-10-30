@@ -5,5 +5,6 @@ get '/' do
 end
 
 post '/jugar' do
-	"jugar ahorcado"
+	@palabra_secreta = params[:palabra]
+	erb :jugar
 end
