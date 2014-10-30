@@ -4,6 +4,11 @@ Feature: Bienvenida
       Given Me encuentro en la pagina principal
       Then Veo el mensade "Bienvenido"  
 
+  Scenario: Pagina de inicio la palabra secreta
+    Given Me encuentro en la pagina principal
+    Then veo el campo para "palabra" 
+    And veo el boton "jugar"
+
   # Scenario: Pagina de inicio nombre de los jugadores
   #   Given Me encuentro en la pagina principal
   #   Then veo el campo para "jugador1" 
