@@ -9,6 +9,12 @@ Feature: Bienvenida
     Then veo el campo para "palabra" 
     And veo el boton "jugar"
 
+  Scenario: Pagina de inicio ingreso palabra secreta
+    Given Me encuentro en la pagina principal
+    When cuando lleno el campo "palabra" con "contrasenia"
+    Then hago click en el boton "jugar" 
+    And veo el mensaje "jugar ahorcado"
+
   # Scenario: Pagina de inicio nombre de los jugadores
   #   Given Me encuentro en la pagina principal
   #   Then veo el campo para "jugador1" 

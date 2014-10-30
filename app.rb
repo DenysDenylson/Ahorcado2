@@ -5,5 +5,5 @@ get '/' do
 end
 
 post '/jugar' do
-  "Hello World"
+	"jugar ahorcado"
 end
