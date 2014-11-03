@@ -16,7 +16,22 @@ Then(/^veo "(.*?)" por cada caracter de la palabra$/) do |text|
 	last_response.body.should =~ /#{text}/m
 end
 
-# ESCENARIO "comenzar a jugar"
+# ESCENARIO "capos para empezar a jugar"
 Then(/^veo el campo para introducir la "(.*?)"$/) do |text|
   last_response.body.should =~ /#{text}/m
+end
+
+# ESCENARIO "empezar a jugar"
+When(/^cuando lleno el campo "(.*?)" con el valor de "(.*?)"$/) do |nombre, valor|
+  fill_in(nombre, :with => valor)
+end
+
+
+# ESCENARIO "validar jugadas"
+When(/^si la "(.*?)" ingresada corresponde a la "(.*?)"$/) do |nombre, valor|
+  fill_in(nombre, :with => valor)
+end
+
+Then(/^reemplazar "(.*?)" por la "(.*?)" dentro de la "(.*?)"$/) do |gion, letra, palabra|
+  last_response.body.should =~ /#{letra}/m
 end
