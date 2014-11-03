@@ -2,8 +2,10 @@ Given(/^Me encuentro en la pagina principal$/) do
 	visit '/'
 end
 
-Then(/^Veo el mensade "(.*?)"$/) do |arg1|
+Then(/^Veo el mensaje de "(.*?)"$/) do |mensaje|
+  last_response.body.should =~ /#{mensaje}/m
 end
+
 
 # escenario palabra
 Then(/^veo el campo para "(.*?)"$/) do |palabra|

@@ -8,4 +8,8 @@ Scenario: numero de caracteres de la palabra
     Then veo el numero de caracteres de la palabra
     Then veo "-" por cada caracter de la palabra
 
+Scenario: comenzar a jugar
+    Given me encuentro en la pagina para jugar
+    Then veo el campo para introducir la "letra"
+    Then veo el boton "adivinar"
   

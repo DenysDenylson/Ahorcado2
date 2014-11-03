@@ -2,7 +2,7 @@ Feature: Bienvenida
   
   Scenario: Pagina de inicio
       Given Me encuentro en la pagina principal
-      Then Veo el mensade "Bienvenido"  
+      Then Veo el mensaje de "Bienvenido"  
 
   Scenario: Pagina de inicio la palabra secreta
     Given Me encuentro en la pagina principal
