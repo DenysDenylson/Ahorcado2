@@ -12,3 +12,6 @@ end
 Then(/^veo el numero de caracteres de la palabra$/) do
   last_response.body.should =~ /caracteres/m
 end
+Then(/^veo "(.*?)" por cada caracter de la palabra$/) do |text|
+	last_response.body.should =~ /#{text}/m
+end

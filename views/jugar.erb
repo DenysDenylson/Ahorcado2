@@ -1,3 +1,8 @@
 <h1>jugar ahorcado</h1>
 <h2>intentos = 0 </h2>
-<p>numero de caracteres = <%= @palabra_secreta.size %></p>
+<p>numero de caracteres de la palabra = <%= @palabra_secreta.size %></p>
+<div>
+	<%for i in 0...@palabra_secreta.size%>
+		-&nbsp;
+	<%end%>
+</div>

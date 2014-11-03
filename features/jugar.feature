@@ -6,4 +6,6 @@ Scenario: intentos
 Scenario: numero de caracteres de la palabra
     Given me encuentro en la pagina para jugar
     Then veo el numero de caracteres de la palabra
+    Then veo "-" por cada caracter de la palabra
+
   
