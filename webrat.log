@@ -1272,3 +1272,18 @@ D, [2014-11-03T13:31:54.833808 #5500] DEBUG -- : REQUESTING PAGE: POST /jugar wi
 D, [2014-11-03T13:31:54.849433 #5500] DEBUG -- : REQUESTING PAGE: POST /validar_letra with {"letra"=>"a", "adivinar"=>"adivinar"} and HTTP headers {"HTTP_REFERER"=>"/jugar"}
 D, [2014-11-03T13:31:54.865060 #5500] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
 D, [2014-11-03T13:31:54.865060 #5500] DEBUG -- : REQUESTING PAGE: POST /jugar with {"palabra"=>"contrasenia", "jugar"=>"jugar"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-06T04:44:43.164096 #4228] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-06T04:44:43.335972 #4228] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-06T04:44:43.351598 #4228] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-06T04:44:43.367223 #4228] DEBUG -- : REQUESTING PAGE: POST /jugar with {"palabra"=>"contrasenia", "jugar"=>"jugar"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-06T04:44:43.382848 #4228] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-06T04:44:43.398474 #4228] DEBUG -- : REQUESTING PAGE: POST /jugar with {"palabra"=>"contrasenia", "jugar"=>"jugar"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-06T04:44:43.398474 #4228] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-06T04:44:43.398474 #4228] DEBUG -- : REQUESTING PAGE: POST /jugar with {"palabra"=>"contrasenia", "jugar"=>"jugar"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-06T04:44:43.414099 #4228] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-06T04:44:43.429722 #4228] DEBUG -- : REQUESTING PAGE: POST /jugar with {"palabra"=>"contrasenia", "jugar"=>"jugar"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-06T04:44:43.445363 #4228] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-06T04:44:43.445363 #4228] DEBUG -- : REQUESTING PAGE: POST /jugar with {"palabra"=>"contrasenia", "jugar"=>"jugar"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-06T04:44:43.460975 #4228] DEBUG -- : REQUESTING PAGE: POST /validar_letra with {"intentos"=>"0", "palabra"=>"contrasenia", "letra"=>"a", "adivinar"=>"adivinar"} and HTTP headers {"HTTP_REFERER"=>"/jugar"}
+D, [2014-11-06T04:44:43.476601 #4228] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-06T04:44:43.476601 #4228] DEBUG -- : REQUESTING PAGE: POST /jugar with {"palabra"=>"contrasenia", "jugar"=>"jugar"} and HTTP headers {"HTTP_REFERER"=>"/"}

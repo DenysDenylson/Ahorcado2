@@ -1,17 +1,30 @@
 <h1>jugar ahorcado</h1>
-<h2>intentos = 0 </h2>
-<p>numero de caracteres de la palabra = <%= @palabra_secreta.size %></p>
-<div>
-	<%for i in 0...@palabra_secreta.size%>
-		-&nbsp;
+<form action="/validar_letra" method="post">
+	<%if @palabra_secreta =~ /#{@letra}/%>
+		<h1>si esta aqui la letra <%= @letra %></h1>
+		<% for i in 0...@palabra_secreta.length %>
+			<% if @palabra_secreta[i] == @letra%>
+				<% @palabra_jugar[i] = @letra%>
+			<% end%>
+		<%end%>
+	<%else%>
+		<% @intentos +=1  %>	
+	<%end%>		
+	
+	<h2>intentos = <%= @intentos %> </h2>
+	<p>numero de caracteres de la palabra = <%= @palabra_secreta.length %></p>
+	<br>
+	PALABRA::: &nbsp;
+	<%for i in 0...@palabra_jugar.length%>
+		<%= @palabra_jugar[i] %>
 	<%end%>
+	<br>
+		<input type="hidden" name="palabra" value="<%= @palabra_secreta %>" ><br>
+		<input type="hidden" name="intentos" value="<%= @intentos %>" ><br>
+		<input type="hidden" name="palabra_jugar" value="<%= @palabra_jugar %>" ><br>
 
-	<form action="/validar_letra" method="post">
 		<label for="letra">letra</label>
-		<input type="text" name="letra" id="letra">
-		<input type="submit" name="adivinar" value="adivinar">
-	</form>
+		<input type="text" name="letra" id="letra" maxlength="1">
+		<input type="submit" name="adivinar" value="adivinar"  >
 
-	<%= @letra %>
-
-</div>
+</form>
