@@ -22,3 +22,9 @@ Scenario: validar jugadas
     Given me encuentro en la pagina para jugar
     When si la "letra" ingresada corresponde a la "palabra"
     Then reemplazar "-" por la "letra" dentro de la "palabra" 
+
+Scenario: historial de jugadas
+    Given me encuentro en la pagina para jugar
+    Then veo el mensaje de "resultados anteriores"
+    Then veo el mensaje de "palabra secreta" 
+    Then veo el mensaje de "palabra final" 

@@ -14,17 +14,35 @@
 	<h2>intentos = <%= @intentos %> </h2>
 	<p>numero de caracteres de la palabra = <%= @palabra_secreta.length %></p>
 	<br>
-	PALABRA::: &nbsp;
-	<%for i in 0...@palabra_jugar.length%>
-		<%= @palabra_jugar[i] %>
-	<%end%>
+	<center><h1>
+		<!-- PALABRA::: &nbsp; -->
+		<%for i in 0...@palabra_jugar.length%>
+			<%= @palabra_jugar[i] %>
+		<%end%>
+	</h1></center>
 	<br>
 		<input type="hidden" name="palabra" value="<%= @palabra_secreta %>" ><br>
 		<input type="hidden" name="intentos" value="<%= @intentos %>" ><br>
 		<input type="hidden" name="palabra_jugar" value="<%= @palabra_jugar %>" ><br>
 
 		<label for="letra">letra</label>
-		<input type="text" name="letra" id="letra" maxlength="1">
+		<input type="text" name="letra" id="letra" maxlength="1" autofocus="autofocus">
 		<input type="submit" name="adivinar" value="adivinar"  >
 
 </form>
+
+<div>
+	<table border="1">
+		<thead>
+			<tr>
+				<th  colspan="2">resultados anteriores</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>palabra secreta</td>
+				<td>palabra final</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

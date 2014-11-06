@@ -35,3 +35,10 @@ end
 Then(/^reemplazar "(.*?)" por la "(.*?)" dentro de la "(.*?)"$/) do |gion, letra, palabra|
   last_response.body.should =~ /#{letra}/m
 end
+
+# ESCENARIO "historial de jugadas"
+
+Then(/^veo el mensaje de "(.*?)"$/) do |mensaje|
+  last_response.body.should =~ /#{mensaje}/m
+end
+
