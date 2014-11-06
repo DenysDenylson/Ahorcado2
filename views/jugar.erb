@@ -10,25 +10,29 @@
 	<%else%>
 		<% @intentos +=1  %>	
 	<%end%>		
+
+	<h1><%= @palabra_secreta %></h1>
+	<h1><%= @palabra_jugar %></h1>
 	
 	<h2>intentos = <%= @intentos %> </h2>
 	<p>numero de caracteres de la palabra = <%= @palabra_secreta.length %></p>
 	<br>
-	<center><h1>
-		<!-- PALABRA::: &nbsp; -->
-		<%for i in 0...@palabra_jugar.length%>
-			<%= @palabra_jugar[i] %>
-		<%end%>
-	</h1></center>
-	<br>
+	<center>
+		<h1>
+			<!-- PALABRA::: &nbsp; -->
+			<%for i in 0...@palabra_jugar.length%>
+				<%= @palabra_jugar[i] %>
+			<%end%>
+		</h1>
+		<br>
 		<input type="hidden" name="palabra" value="<%= @palabra_secreta %>" ><br>
 		<input type="hidden" name="intentos" value="<%= @intentos %>" ><br>
 		<input type="hidden" name="palabra_jugar" value="<%= @palabra_jugar %>" ><br>
 
 		<label for="letra">letra</label>
-		<input type="text" name="letra" id="letra" maxlength="1" autofocus="autofocus">
+		<input type="text" name="letra" id="letra" maxlength="1" autofocus="autofocus" required="required">
 		<input type="submit" name="adivinar" value="adivinar"  >
-
+	</center>
 </form>
 
 <div>
@@ -43,6 +47,13 @@
 				<td>palabra secreta</td>
 				<td>palabra final</td>
 			</tr>
+
+			<% $historial.each do |key,value| %>
+				<tr>
+					<td><%= key %></td>
+					<td><%= value %></td>
+				</tr>
+			<%end%>
 		</tbody>
 	</table>
 </div>

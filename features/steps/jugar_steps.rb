@@ -42,3 +42,13 @@ Then(/^veo el mensaje de "(.*?)"$/) do |mensaje|
   last_response.body.should =~ /#{mensaje}/m
 end
 
+# ESCENARIO "guardar historial de jugadas"
+# Then(/^guardo el valor de "(.*?)" del campo "(.*?)"$/) do |campo , valor|
+#   fill_in(campo, :with => "denys")
+# end
+
+# ESCENARIO "mostrar historial de jugadas"
+# Then(/^muestro mi hitorial "(.*?)"$/) do |nombre|
+#   fill_in(nombre )
+#   last_response.body.should =~ /#{nombre}/m
+# end

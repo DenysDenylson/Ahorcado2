@@ -28,3 +28,13 @@ Scenario: historial de jugadas
     Then veo el mensaje de "resultados anteriores"
     Then veo el mensaje de "palabra secreta" 
     Then veo el mensaje de "palabra final" 
+
+# Scenario: guardar resultado historial de jugadas
+#     Given me encuentro en la pagina para jugar
+#     When termina la partida
+#     Then guardo el valor de "denys" del campo "palabra" 
+
+# Scenario: mostrar historial de jugadas
+#     Given me encuentro en la pagina para jugar
+#     Then muestro mi hitorial "historial"
+    

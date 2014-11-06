@@ -1,6 +1,7 @@
 require "sinatra"
 
-
+$historial = Hash.new
+# $historial = {'denys'=>'denylson','oscar'=>'hurtado'}
 # def esta?(palabra, letra)
 # 	if palabra =~ /letra/
 # 		return true
@@ -41,8 +42,17 @@ post '/validar_letra' do
   	@palabra_jugar = params[:palabra_jugar]
 
   	if @intentos < 3
-		erb :jugar
-  	else
+  		if @palabra_jugar == @palabra_secreta
+  			"GANASTE"
+  			$historial[@palabra_secreta] = @palabra_jugar
+  			erb :bienvenida
+
+  		else
+			erb :jugar
+  		end
+  	else	
   		"PERDISTE la palabra secreta es::: #{@palabra_secreta}"
+  		$historial[@palabra_secreta] = @palabra_jugar
+
   	end
 end
