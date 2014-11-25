@@ -48,11 +48,11 @@ post '/validar_letra' do
   			erb :bienvenida
 
   		else
-			erb :jugar
+			 erb :jugar
   		end
   	else	
   		"PERDISTE la palabra secreta es::: #{@palabra_secreta}"
   		$historial[@palabra_secreta] = @palabra_jugar
-
+      erb :bienvenida
   	end
 end

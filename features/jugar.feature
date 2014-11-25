@@ -29,6 +29,11 @@ Scenario: historial de jugadas
     Then veo el mensaje de "palabra secreta" 
     Then veo el mensaje de "palabra final" 
 
+Scenario: boton de reinicio
+    Given me encuentro en la pagina para jugar
+    Then veo el boton "reiniciar"
+   
+
 # Scenario: guardar resultado historial de jugadas
 #     Given me encuentro en la pagina para jugar
 #     When termina la partida

@@ -1,4 +1,7 @@
 <h1>jugar ahorcado</h1>
+<form action="/">
+	<input type="submit" name="reiniciar" value="reiniciar">
+</form>
 <form action="/validar_letra" method="post">
 	<%if @palabra_secreta =~ /#{@letra}/%>
 		<h1>si esta aqui la letra <%= @letra %></h1>
